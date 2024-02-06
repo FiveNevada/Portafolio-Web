@@ -1,0 +1,133 @@
+.Contact {
+    background: #18122B;
+    padding: 0px 50px;
+    scroll-margin-top: 70px;
+}
+
+.Contact .Content-Contact h1{
+    text-align: center;
+}
+
+
+.Contact .Content-Contact .DataEmail .Data{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center
+}
+
+.Contact .Content-Contact .DataEmail .Data .DataOptions{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+} 
+
+.Contact .Content-Contact .DataEmail .Data .DataOptions .Options{
+    width: 50px;
+    height: 50px;
+    background-color: #eb194a;
+    border-radius: 10px;
+    margin: 0 15px 0px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Contact button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 25px auto;
+    padding: 10px 22px;
+    font: 16px;
+    color: #fff;
+    position: relative;
+    transition: .5s;
+    z-index: 10;
+}
+
+.Contact button:hover{
+    background: #eb194a;
+}
+
+.Contact .Content-Contact .Footer{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.Contact .Content-Contact .Footer .DataOptions {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+}
+
+.Contact .Content-Contact .Footer .DataOptions button{
+    width: 50px;
+    height: 50px;
+    background-color: #eb194a;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+    margin: 0 15px 0px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s;
+}
+
+.Contact .Content-Contact .Footer .DataOptions button:hover{
+    transform: scale(1.2);
+}
+
+@media (max-width: 815px) {
+    .Contact .Content-Contact .DataEmail {
+        grid-template-columns: 1fr; 
+    }
+
+    .Contact .Content-Contact .DataEmail .Data .DataOptions,
+    .Contact .Content-Contact .DataEmail .Email {
+        text-align: center; 
+    }
+    .Contact .Content-Contact .Footer .DataOptions{
+        margin: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .Contact .Content-Contact .Footer .DataOptions{
+        margin: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .Contact{
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 320px) {
+    .Contact{
+        padding: 0 10px;
+    }
+
+    .Contact .Content-Contact .DataEmail .Data .DataOptions {
+        display: block;
+    }
+
+    .Contact .Content-Contact .DataEmail .Data .DataOptions .Options {
+        margin: auto;
+    }
+}

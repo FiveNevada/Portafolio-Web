@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito+Sans:opsz,wght@6..12,300&family=PT+Serif:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito Sans';
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    width: 5%;
+    background-color: #eb194a; 
+    margin: 10px 0; 
+}
+
+.Header {
+    background: #252A2E;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.Header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.Header header .Logo a{
+    font-family: 'PT Serif';
+    font-size: 36px;
+    color: #eb194a;
+    text-decoration: none;
+}
+
+.Header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.Header header nav ul li a {
+    text-align: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.Header header nav ul li a:hover {
+    color: #eb194a;
+}
+
+.Menu-Bars {
+    background-color: #365486;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+@media screen and (max-width:950px){
+    nav{
+        display: none;
+    }
+
+    .Header header nav ul li a {
+        padding: 10px 20px;
+    }
+
+    .Menu-Bars{
+        display: block;
+    }
+
+    nav.Responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.Responsive ul{
+        display: block !important;
+    }
+
+    nav.Responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+

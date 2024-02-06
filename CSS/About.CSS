@@ -1,0 +1,127 @@
+/* SECCION A C E R C A  D E  M I  */
+
+.About {
+    background-color: #18122B; 
+    color: #fff;
+    padding: 50px 20px;
+    scroll-margin-top: 35px;
+}
+
+.About .Content-About {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.About h2{
+    font-size: 25px;
+}
+
+.About .Content-About p{
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.About .Content-About p span{
+    color: #eb194a;
+    font-weight: bold;
+}
+
+.About .Row {
+    display: flex;
+}
+
+.About .Row .Col {
+    width: 50%;
+}
+
+.About .Row .Col h3{
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.About .Row .Col ul{
+    list-style: none;
+}
+
+.About .Row .Col ul li{
+    margin: 12px 0;
+}
+
+.About .Row .Col ul li strong{
+    display: inline-block;
+    color: #eb194a;
+    width: 130px;
+}
+
+.About .Row .Col ul li span{
+    background-color: #eb194a;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.About .Row .Col .HobbiesInterests{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.About .Row .Col .HobbiesInterests .Interests{
+    width: 115px;
+    height: 115px;
+    background-color: #252A2E;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.About .Row .Col .HobbiesInterests .Interests i{
+    font-size: 30px;
+    margin-bottom: 10px;
+    background: #252A2E;
+}
+
+.About .Row .Col .HobbiesInterests .Interests span{
+    background: #252A2E;
+}
+
+.About .CV{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 25px auto;
+    padding: 10px 22px;
+    font: 16px;
+    color: #fff;
+    position: relative;
+    transition: .5s;
+    z-index: 10;
+}
+
+.About .CV:hover{
+    background: #eb194a
+}
+
+.About a{
+    text-decoration: none;
+    width: 100px;
+}
+
+@media screen and (max-width:838px){
+    .About .Row{
+        display: block;
+    }
+
+    .About .Row .Col{
+        width: fit-content;
+    }
+
+    .About .Col .HobbiesInterests{
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,143 @@
+.Project {
+    background:#252A2E;
+    padding: 50px 30px;
+    scroll-margin-top: 70px;
+}
+
+.Project .Info {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 25px auto;
+    padding: 10px 22px;
+    font: 16px;
+    color: #fff;
+    position: relative;
+    transition: .5s;
+    z-index: 10;
+}
+
+.Project .Info:hover{
+    background: #eb194a
+}
+
+.Project a{
+    text-decoration: none;
+    width: 100px;
+}
+
+.Project .Content-Project {
+    display: grid;
+    grid-template-columns: 1.4fr 1.4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 20px;
+}
+
+.Project .Content-Project .Imagen {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.Project .Content-Project .Imagen img{
+    width: 90%;
+    height: 240px;
+}
+
+.Imagen3 img{
+    width: 40% !important;
+    height: 500px !important;
+}
+
+.Project .Content-Project .Proyectos .Technology {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: auto;
+    align-content: start;
+}
+
+.Project .Content-Project .Proyectos .Technology .technologies{
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Project .Content-Project .Proyectos .Technology .technologies i{
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:838px){
+    .Project .Content-Project {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr 0.6fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+            'Proyecto1'
+            'Imagen1'
+            'Proyecto2'
+            'Imagen2'
+            'Proyecto3'
+            'Imagen3';
+    }
+    
+    .Project .Content-Project .Imagen img{
+        width: 90%;
+        height: 100%;
+        margin-top: 50px;
+    }
+
+    .Proyecto1{
+        grid-area: Proyecto1;
+        max-width: fit-content;
+    }
+
+    .Imagen1{
+        grid-area: Imagen1;
+    }
+
+    .Project .Content-Project .Imagen1 img{
+        margin-top: 0;
+    }
+
+    .Proyecto2{
+        grid-area: Proyecto2;
+    }
+
+    .Imagen2{
+        grid-area: Imagen2;
+    }
+
+    .Proyecto3{
+        grid-area: Proyecto3;
+    }
+
+    .Imagen3{
+        grid-area: Imagen3;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+    .Project .Content-Project {
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 0.6fr 0.4fr 0.6fr 0.4fr 0.6fr 0.4fr; 
+    }
+
+    .Project .Content-Project .Imagen img{
+        width: 270px;
+        height: 100%;
+        margin-top: 50px;
+    }
+    
+}
